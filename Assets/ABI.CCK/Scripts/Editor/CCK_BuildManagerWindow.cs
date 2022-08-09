@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Reflection;
+using System.Text;
+using System.Threading.Tasks;
 using System.Xml.Linq;
 using System.Xml.XPath;
 using ABI.CCK.Components;
 using ABI.CCK.Scripts.Runtime;
+using Abi.Newtonsoft.Json;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEditor.UIElements;
@@ -19,9 +23,9 @@ namespace ABI.CCK.Scripts.Editor
     [InitializeOnLoad]
     public class CCK_BuildManagerWindow : EditorWindow
     {
-        public static string Version = "3.3 RELEASE";
+        public static string Version = "3.4 RELEASE";
         public static int BuildID = 90;
-        private const string CCKVersion = "3.3 RELEASE (Build 90)";
+        private const string CCKVersion = "3.4 RELEASE (Build 92)";
 
         private string[] SupportedUnityVersions = new[]
         {
@@ -46,7 +50,6 @@ namespace ABI.CCK.Scripts.Editor
         Vector2 scrollPosAvatar;
         Vector2 scrollPosSpawnable;
         Vector2 scrollPosWorld;
-        UnityWebRequest _webRequest;
         
         private int _tab;
         private Vector2 _scroll;
@@ -638,7 +641,7 @@ namespace ABI.CCK.Scripts.Editor
         
         private void EditorUpdate()
         {
-            if (!_attemptingToLogin || _webRequest is null || !_webRequest.isDone) return;
+            /*if (!_attemptingToLogin || _webRequest is null || !_webRequest.isDone) return;
 
             if (_webRequest.isNetworkError || _webRequest.isHttpError)
             {
@@ -670,7 +673,7 @@ namespace ABI.CCK.Scripts.Editor
             }
 
             _webRequest = null;
-            _attemptingToLogin = false;
+            _attemptingToLogin = false;*/
         }
         
         private void Logout()
@@ -681,22 +684,77 @@ namespace ABI.CCK.Scripts.Editor
             EditorPrefs.SetString("m_ABI_Key", _key);
         }
 
-        public void Login()
+        public async Task Login()
         {
-            if (_attemptingToLogin || string.IsNullOrEmpty(_username) || string.IsNullOrEmpty(_key)) return;
-            var values = new Dictionary<string, string> {{"user", _username}, {"accesskey", _key}};
-            _webRequest = UnityWebRequest.Post("https://gateway.abi.network/v1/IContentCreation/ValidateKey", values);
-            _webRequest.SendWebRequest();
-            _attemptingToLogin = true;
+            if (!_attemptingToLogin)
+            {
+                _attemptingToLogin = true;
+
+                using (HttpClient httpclient = new HttpClient())
+                {
+                    HttpResponseMessage response;
+                    response = await httpclient.PostAsync(
+                        "https://api.abinteractive.net/1/cck/validateKey",
+                        new StringContent(JsonConvert.SerializeObject(new {Username = _username, AccessKey = _key}),
+                            Encoding.UTF8, "application/json")
+                    );
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string result = await response.Content.ReadAsStringAsync();
+                        BaseResponse<LoginResponse> usr = Abi.Newtonsoft.Json.JsonConvert.DeserializeObject<BaseResponse<LoginResponse>>(result);
+                        
+                        if (usr == null || usr.Data == null) return;
+                        
+                        if (usr.Data.isValidCredentials)
+                        {
+                            _apiUserRank = usr.Data.userRank;
+                            Debug.Log("[ABI:CCK] Successfully authenticated as " + _username + " using AlphaLink Public API.");
+                            EditorPrefs.SetString("m_ABI_Username", _username);
+                            EditorPrefs.SetString("m_ABI_Key", _key);
+                            _loggedIn = true;
+                            _hasAttemptedToLogin = false;
+                        }
+                        else
+                        {
+                            Debug.Log("[ABI:CCK] Unable to authenticate using provided credentials. API responded with: " + usr.Message + ".");
+                            _loggedIn = false;
+                            _hasAttemptedToLogin = true;
+                            _username = _key = string.Empty;
+                        }
+                    }
+                    else
+                    {
+                        Debug.LogError("[ABI:CCK] Web Request Error while trying to authenticate.");
+                    }
+                }
+                _attemptingToLogin = false;
+            }
         }
     }
     
     public class LoginResponse
     {
-        public bool IsValidCredential { get; set; }
-        public bool IsAccountUnlocked { get; set; }
-        public string ApiMessage { get; set; }
-        public string UserId { get; set; }
-        public string UserRank { get; set; }
+        public bool isValidCredentials { get; set; }
+        public bool isAccountUnlocked { get; set; }
+        public string userId { get; set; }
+        public string userRank { get; set; }
+    }
+
+    public class BaseResponse<T>
+    {
+        public string Message { get; set; }
+        public T Data { get; set; }
+
+        public BaseResponse(string message = null, T data = default)
+        {
+            Message = message;
+            Data = data;
+        }
+
+        public override string ToString()
+        {
+            return JsonConvert.SerializeObject(this);
+        }
     }
 }

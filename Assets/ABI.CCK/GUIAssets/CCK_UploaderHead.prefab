@@ -17079,7 +17079,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: ABI Platform Content Creation Kit v3.3 RELEASE (Build 90, Public)
+  m_Text: ABI Platform Content Creation Kit v3.4 RELEASE (Build 92, Public)
 --- !u!1 &8389522060313083026
 GameObject:
   m_ObjectHideFlags: 0
