@@ -812,7 +812,7 @@ MonoBehaviour:
     interactionFilter: 0
     interactionInput: 48
     interactionInputModifier: 0
-    guid: 
+    guid: 8645000e-f85b-4663-bd82-6333aa8bea31
   onEnterSeat:
     m_PersistentCalls:
       m_Calls: []
@@ -2780,7 +2780,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 2
-  objectId: 
+  objectId: f991ee68-b781-4bcb-9cfd-de4c99bdd452
 --- !u!1 &1304068914
 GameObject:
   m_ObjectHideFlags: 0
@@ -3246,7 +3246,7 @@ MonoBehaviour:
   - 0
   - 0
   - 0
-  applyHRTFToPathing: 1
+  applyHRTFToPathing: 0
   pathingMixLevel: 1
 --- !u!114 &1658490623
 MonoBehaviour:
@@ -3588,7 +3588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd6327bf7e514821af46379fd775e356, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerId: 
+  playerId: 78524a61-5ed6-4b8b-b569-6cc5f8ae644e
   audioPlaybackMode: 4
   customAudioSource: {fileID: 0}
   roomScaleAudioSources:
@@ -3910,7 +3910,7 @@ MonoBehaviour:
   - 0
   - 0
   - 0
-  applyHRTFToPathing: 1
+  applyHRTFToPathing: 0
   pathingMixLevel: 1
 --- !u!4 &1870864138
 Transform:
