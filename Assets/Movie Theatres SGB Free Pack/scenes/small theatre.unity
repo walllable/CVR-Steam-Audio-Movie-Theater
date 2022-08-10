@@ -329,6 +329,36 @@ Transform:
   m_Father: {fileID: 850389639}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: -15.000001, z: 0}
+--- !u!1 &180734094
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 180734095}
+  m_Layer: 0
+  m_Name: CCK
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &180734095
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180734094}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.6197605, y: 1.3842809, z: 2.8690503}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &190829634
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,6 +635,56 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &496218970
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 496218971}
+  - component: {fileID: 496218972}
+  m_Layer: 0
+  m_Name: Probe Batch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &496218971
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496218970}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.2, z: -0.52}
+  m_LocalScale: {x: 1, y: 4.648321, z: 9.31783}
+  m_Children: []
+  m_Father: {fileID: 1672162053}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &496218972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496218970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 286962cac82a4fa4e9ec38ab663c9578, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placementStrategy: 1
+  horizontalSpacing: 5
+  heightAboveFloor: 1.5
+  asset: {fileID: 0}
+  probeDataSize: 0
+  mProbeSpheres: []
+  mBakedDataLayerInfo: []
 --- !u!1 &520167376
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,6 +697,7 @@ GameObject:
   - component: {fileID: 520167380}
   - component: {fileID: 520167379}
   - component: {fileID: 520167378}
+  - component: {fileID: 520167381}
   m_Layer: 0
   m_Name: theatre_leather_chair
   m_TagString: Untagged
@@ -698,6 +779,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 520167376}
   m_Mesh: {fileID: 4300000, guid: d262ce12b35585340969aef625ea42a9, type: 3}
+--- !u!114 &520167381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520167376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e829c87dc2a2ed2419c5f67848317fe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 11400000, guid: a086f686223eed942816c70be67841b0, type: 2}
+  exportAllChildren: 0
+  terrainSimplificationLevel: 0
 --- !u!1 &554667320
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,6 +806,7 @@ GameObject:
   - component: {fileID: 554667324}
   - component: {fileID: 554667323}
   - component: {fileID: 554667322}
+  - component: {fileID: 554667325}
   m_Layer: 0
   m_Name: theatre_leather_chair
   m_TagString: Untagged
@@ -791,6 +888,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 554667320}
   m_Mesh: {fileID: 4300000, guid: d262ce12b35585340969aef625ea42a9, type: 3}
+--- !u!114 &554667325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554667320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e829c87dc2a2ed2419c5f67848317fe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 11400000, guid: a086f686223eed942816c70be67841b0, type: 2}
+  exportAllChildren: 0
+  terrainSimplificationLevel: 0
 --- !u!1 &565816345
 GameObject:
   m_ObjectHideFlags: 0
@@ -1585,6 +1697,7 @@ GameObject:
   - component: {fileID: 1338022506}
   - component: {fileID: 1338022505}
   - component: {fileID: 1338022504}
+  - component: {fileID: 1338022507}
   m_Layer: 0
   m_Name: theatre_leather_chair
   m_TagString: Untagged
@@ -1666,6 +1779,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1338022502}
   m_Mesh: {fileID: 4300000, guid: d262ce12b35585340969aef625ea42a9, type: 3}
+--- !u!114 &1338022507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338022502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e829c87dc2a2ed2419c5f67848317fe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 11400000, guid: a086f686223eed942816c70be67841b0, type: 2}
+  exportAllChildren: 0
+  terrainSimplificationLevel: 0
 --- !u!1 &1483256125
 GameObject:
   m_ObjectHideFlags: 0
@@ -1758,6 +1886,51 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1593266240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1593266242}
+  - component: {fileID: 1593266241}
+  m_Layer: 0
+  m_Name: Steam Audio Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1593266241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593266240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b11066ff95bbf3344b868394742f7002, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHRTF: 0
+  hrtfNames: []
+--- !u!4 &1593266242
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593266240}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1672162052
 GameObject:
   m_ObjectHideFlags: 0
@@ -1782,9 +1955,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1672162052}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.049372, y: -4.0991893, z: -9.766684}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_LocalPosition: {x: 0, y: 1.97, z: 0}
+  m_LocalScale: {x: 9.564431, y: 1, z: 1}
+  m_Children:
+  - {fileID: 496218971}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1831,6 +2005,7 @@ GameObject:
   - component: {fileID: 1719154553}
   - component: {fileID: 1719154552}
   - component: {fileID: 1719154551}
+  - component: {fileID: 1719154554}
   m_Layer: 0
   m_Name: sofa_table_side_table (1)
   m_TagString: Untagged
@@ -1912,6 +2087,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1719154549}
   m_Mesh: {fileID: 4300000, guid: 317f305318f42f84c8274ab5ab7c251b, type: 3}
+--- !u!114 &1719154554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719154549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e829c87dc2a2ed2419c5f67848317fe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 11400000, guid: 5272c55b882edd34a9d80b11bd6f240c, type: 2}
+  exportAllChildren: 0
+  terrainSimplificationLevel: 0
 --- !u!1 &1937760794
 GameObject:
   m_ObjectHideFlags: 0
@@ -2441,6 +2631,7 @@ GameObject:
   - component: {fileID: 282919778144953483}
   - component: {fileID: 282919778145953355}
   - component: {fileID: 5612504547568112346}
+  - component: {fileID: 282919778147956876}
   m_Layer: 0
   m_Name: sofa_table_side_table
   m_TagString: Untagged
@@ -2448,6 +2639,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
+--- !u!114 &282919778147956876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282919778147956875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e829c87dc2a2ed2419c5f67848317fe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 11400000, guid: 5272c55b882edd34a9d80b11bd6f240c, type: 2}
+  exportAllChildren: 0
+  terrainSimplificationLevel: 0
 --- !u!4 &282919778148377771
 Transform:
   m_ObjectHideFlags: 0
@@ -2644,6 +2850,7 @@ GameObject:
   - component: {fileID: 1862610216427476251}
   - component: {fileID: 1862610216428574683}
   - component: {fileID: 6823474287523201119}
+  - component: {fileID: 1862610216426637596}
   m_Layer: 0
   m_Name: theatre_leather_chair
   m_TagString: Untagged
@@ -2651,6 +2858,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
+--- !u!114 &1862610216426637596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862610216426637595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e829c87dc2a2ed2419c5f67848317fe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 11400000, guid: a086f686223eed942816c70be67841b0, type: 2}
+  exportAllChildren: 0
+  terrainSimplificationLevel: 0
 --- !u!33 &1862610216427476251
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3192,7 +3414,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &4044809631248178068
 GameObject:
   m_ObjectHideFlags: 0
@@ -3923,6 +4145,7 @@ GameObject:
   - component: {fileID: 6460340237612779249}
   - component: {fileID: 6460340237611811889}
   - component: {fileID: 4432293041984393585}
+  - component: {fileID: 6460340237613751026}
   m_Layer: 0
   m_Name: sofa_table_sofa
   m_TagString: Untagged
@@ -3930,6 +4153,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
+--- !u!114 &6460340237613751026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6460340237613751025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e829c87dc2a2ed2419c5f67848317fe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 11400000, guid: 4ef433d5b2fa5ad4a9e19a415c6ab619, type: 2}
+  exportAllChildren: 0
+  terrainSimplificationLevel: 0
 --- !u!4 &6460340237614106321
 Transform:
   m_ObjectHideFlags: 0
@@ -3963,7 +4201,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 8393301471047489152, guid: d23218ed43b812444afcbe374a95cc1b, type: 3}
-  - {fileID: 2994280962357473363, guid: d23218ed43b812444afcbe374a95cc1b, type: 3}
+  - {fileID: 2100000, guid: 755f6396703844c4a9e12eda716c95b2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
