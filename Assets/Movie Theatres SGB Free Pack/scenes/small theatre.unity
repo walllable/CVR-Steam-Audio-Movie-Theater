@@ -812,7 +812,7 @@ MonoBehaviour:
     interactionFilter: 0
     interactionInput: 48
     interactionInputModifier: 0
-    guid: 8645000e-f85b-4663-bd82-6333aa8bea31
+    guid: 842be78c-6784-4106-9d1c-3cc85ac0b0fd
   onEnterSeat:
     m_PersistentCalls:
       m_Calls: []
@@ -3219,7 +3219,7 @@ MonoBehaviour:
   hybridReverbEQMid: 1
   hybridReverbEQHigh: 1
   hybridReverbDelay: 0
-  applyHRTFToReflections: 1
+  applyHRTFToReflections: 0
   reflectionsMixLevel: 1
   pathing: 1
   pathingProbeBatch: {fileID: 496218972}
@@ -3246,7 +3246,7 @@ MonoBehaviour:
   - 0
   - 0
   - 0
-  applyHRTFToPathing: 0
+  applyHRTFToPathing: 1
   pathingMixLevel: 1
 --- !u!114 &1658490623
 MonoBehaviour:
@@ -3883,7 +3883,7 @@ MonoBehaviour:
   hybridReverbEQMid: 1
   hybridReverbEQHigh: 1
   hybridReverbDelay: 0
-  applyHRTFToReflections: 1
+  applyHRTFToReflections: 0
   reflectionsMixLevel: 1
   pathing: 1
   pathingProbeBatch: {fileID: 496218972}
@@ -3910,7 +3910,7 @@ MonoBehaviour:
   - 0
   - 0
   - 0
-  applyHRTFToPathing: 0
+  applyHRTFToPathing: 1
   pathingMixLevel: 1
 --- !u!4 &1870864138
 Transform:
