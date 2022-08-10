@@ -1497,7 +1497,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1304068915
 Transform:
   m_ObjectHideFlags: 0
@@ -1758,6 +1758,36 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1672162052
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1672162053}
+  m_Layer: 0
+  m_Name: Steam Audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1672162053
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672162052}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.049372, y: -4.0991893, z: -9.766684}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1699454320
 GameObject:
   m_ObjectHideFlags: 0
@@ -2565,6 +2595,7 @@ GameObject:
   - component: {fileID: 1248064882373719953}
   - component: {fileID: 7723893399889906795}
   - component: {fileID: 1528684282057952493}
+  - component: {fileID: 1579272454068024494}
   m_Layer: 0
   m_Name: Metal 1
   m_TagString: Untagged
@@ -2572,6 +2603,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
+--- !u!114 &1579272454068024494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579272454068024493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e829c87dc2a2ed2419c5f67848317fe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 11400000, guid: d780f25df1d231d4aa9a31ab3ba935d0, type: 2}
+  exportAllChildren: 0
+  terrainSimplificationLevel: 0
 --- !u!4 &1862610216426149179
 Transform:
   m_ObjectHideFlags: 0
@@ -2724,6 +2770,7 @@ GameObject:
   - component: {fileID: 2789814609017423851}
   - component: {fileID: 708677292653671541}
   - component: {fileID: 4138130786331222252}
+  - component: {fileID: 2194598048851047705}
   m_Layer: 0
   m_Name: wood 2
   m_TagString: Untagged
@@ -2731,6 +2778,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
+--- !u!114 &2194598048851047705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2194598048851047704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e829c87dc2a2ed2419c5f67848317fe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 11400000, guid: 5272c55b882edd34a9d80b11bd6f240c, type: 2}
+  exportAllChildren: 0
+  terrainSimplificationLevel: 0
 --- !u!4 &2309777032118872024
 Transform:
   m_ObjectHideFlags: 0
@@ -3316,7 +3378,7 @@ GameObject:
   - component: {fileID: 4118174694770261393}
   - component: {fileID: 4118174694771392337}
   m_Layer: 0
-  m_Name: Small Theatre Details
+  m_Name: Small Theatre Details (UNUSED)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3334,7 +3396,7 @@ GameObject:
   - component: {fileID: 4118174694770261395}
   - component: {fileID: 4118174694771392339}
   m_Layer: 0
-  m_Name: Screen and Speakers
+  m_Name: Screen and Speakers (UNUSED)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3353,7 +3415,7 @@ GameObject:
   - component: {fileID: 4118174694771392343}
   - component: {fileID: 4118174694773580184}
   m_Layer: 0
-  m_Name: Small Theatre Room
+  m_Name: Small Theatre Room (UNUSED)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3658,6 +3720,7 @@ GameObject:
   - component: {fileID: 6055380877034956081}
   - component: {fileID: 8022513028833292722}
   - component: {fileID: 4966622218507339557}
+  - component: {fileID: 5779433518916326548}
   m_Layer: 0
   m_Name: Walls
   m_TagString: Untagged
@@ -3665,6 +3728,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
+--- !u!114 &5779433518916326548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5779433518916326547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e829c87dc2a2ed2419c5f67848317fe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 11400000, guid: 9e0a6d5705eaec64ab63e6ac7132e0a7, type: 2}
+  exportAllChildren: 0
+  terrainSimplificationLevel: 0
 --- !u!1 &5983064592058446095
 GameObject:
   m_ObjectHideFlags: 0
@@ -3676,6 +3754,7 @@ GameObject:
   - component: {fileID: 8125408852183810820}
   - component: {fileID: 2089450502393057224}
   - component: {fileID: 427402126505636449}
+  - component: {fileID: 5983064592058446096}
   m_Layer: 0
   m_Name: fabric walls
   m_TagString: Untagged
@@ -3683,6 +3762,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
+--- !u!114 &5983064592058446096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5983064592058446095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e829c87dc2a2ed2419c5f67848317fe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 11400000, guid: 4ef433d5b2fa5ad4a9e19a415c6ab619, type: 2}
+  exportAllChildren: 0
+  terrainSimplificationLevel: 0
 --- !u!4 &6055380877034956081
 Transform:
   m_ObjectHideFlags: 0
@@ -3708,6 +3802,7 @@ GameObject:
   - component: {fileID: 1219955616134209768}
   - component: {fileID: 4785295672297310232}
   - component: {fileID: 3607796710696281708}
+  - component: {fileID: 6145826809121756713}
   m_Layer: 0
   m_Name: wood 1
   m_TagString: Untagged
@@ -3715,6 +3810,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
+--- !u!114 &6145826809121756713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6145826809121756712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e829c87dc2a2ed2419c5f67848317fe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 11400000, guid: 5272c55b882edd34a9d80b11bd6f240c, type: 2}
+  exportAllChildren: 0
+  terrainSimplificationLevel: 0
 --- !u!23 &6155121539326217132
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3885,6 +3995,7 @@ GameObject:
   - component: {fileID: 197688671033805099}
   - component: {fileID: 5574312513618192392}
   - component: {fileID: 95743046196769523}
+  - component: {fileID: 6750540317563709538}
   m_Layer: 0
   m_Name: Carpet Floor
   m_TagString: Untagged
@@ -3892,6 +4003,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
+--- !u!114 &6750540317563709538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6750540317563709537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e829c87dc2a2ed2419c5f67848317fe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 11400000, guid: 4ef433d5b2fa5ad4a9e19a415c6ab619, type: 2}
+  exportAllChildren: 0
+  terrainSimplificationLevel: 0
 --- !u!4 &6809472517127338862
 Transform:
   m_ObjectHideFlags: 0
@@ -3930,6 +4056,7 @@ GameObject:
   - component: {fileID: 4350901086725346960}
   - component: {fileID: 7859683297531885678}
   - component: {fileID: 6155121539326217132}
+  - component: {fileID: 6905091947081203345}
   m_Layer: 0
   m_Name: Space Ceiling
   m_TagString: Untagged
@@ -3937,6 +4064,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
+--- !u!114 &6905091947081203345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6905091947081203344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e829c87dc2a2ed2419c5f67848317fe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 11400000, guid: 9e0a6d5705eaec64ab63e6ac7132e0a7, type: 2}
+  exportAllChildren: 0
+  terrainSimplificationLevel: 0
 --- !u!4 &7041187523400282185
 Transform:
   m_ObjectHideFlags: 0
@@ -3973,6 +4115,7 @@ GameObject:
   - component: {fileID: 2117667251083264227}
   - component: {fileID: 8652315311991183834}
   - component: {fileID: 7642283985086886269}
+  - component: {fileID: 7531152628086191498}
   m_Layer: 0
   m_Name: Curtains
   m_TagString: Untagged
@@ -3980,6 +4123,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
+--- !u!114 &7531152628086191498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7531152628086191497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e829c87dc2a2ed2419c5f67848317fe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 11400000, guid: 4ef433d5b2fa5ad4a9e19a415c6ab619, type: 2}
+  exportAllChildren: 0
+  terrainSimplificationLevel: 0
 --- !u!33 &7543593612214683310
 MeshFilter:
   m_ObjectHideFlags: 0
