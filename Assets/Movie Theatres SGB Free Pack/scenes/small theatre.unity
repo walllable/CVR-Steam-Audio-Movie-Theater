@@ -812,7 +812,7 @@ MonoBehaviour:
     interactionFilter: 0
     interactionInput: 48
     interactionInputModifier: 0
-    guid: f17181e4-0470-47f7-acc5-c679d27ff076
+    guid: f7c3be65-2638-4078-8b87-d9c80289ac3d
   onEnterSeat:
     m_PersistentCalls:
       m_Calls: []
@@ -3220,7 +3220,7 @@ MonoBehaviour:
   hybridReverbEQHigh: 1
   hybridReverbDelay: 0
   applyHRTFToReflections: 0
-  reflectionsMixLevel: 1
+  reflectionsMixLevel: 0.5
   pathing: 1
   pathingProbeBatch: {fileID: 496218972}
   pathValidation: 1
@@ -3884,7 +3884,7 @@ MonoBehaviour:
   hybridReverbEQHigh: 1
   hybridReverbDelay: 0
   applyHRTFToReflections: 0
-  reflectionsMixLevel: 1
+  reflectionsMixLevel: 0.5
   pathing: 1
   pathingProbeBatch: {fileID: 496218972}
   pathValidation: 1
