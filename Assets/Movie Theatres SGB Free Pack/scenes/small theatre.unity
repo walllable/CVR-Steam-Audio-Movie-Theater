@@ -812,7 +812,7 @@ MonoBehaviour:
     interactionFilter: 0
     interactionInput: 48
     interactionInputModifier: 0
-    guid: f7c3be65-2638-4078-8b87-d9c80289ac3d
+    guid: 22282284-46a7-4f5f-8024-361705663da2
   onEnterSeat:
     m_PersistentCalls:
       m_Calls: []
@@ -924,608 +924,608 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   placementStrategy: 1
   horizontalSpacing: 1
-  heightAboveFloor: 1.5
+  heightAboveFloor: 1.15
   asset: {fileID: 11400000, guid: 22e730976d95e8049957836ff1b258a4, type: 2}
   probeDataSize: 1201356
   mProbeSpheres:
   - center:
       x: -4.5
-      y: 3.5556283
+      y: 3.2056284
       z: -3.98
     radius: 1
   - center:
       x: -4.5
-      y: 1.7515289
+      y: 1.4015288
       z: -3.98
     radius: 1
   - center:
       x: -4.5
-      y: 1.3922954
+      y: 1.0422955
       z: -2.98
     radius: 1
   - center:
       x: -4.5
-      y: 1.358736
+      y: 1.0087361
       z: -1.98
     radius: 1
   - center:
       x: -4.5
-      y: 1.358736
+      y: 1.0087361
       z: -0.98
     radius: 1
   - center:
       x: -4.5
-      y: 1.3587356
+      y: 1.0087357
       z: 0.019999921
     radius: 1
   - center:
       x: -4.5
-      y: 1.3587356
+      y: 1.0087357
       z: 1.02
     radius: 1
   - center:
       x: -4.5
-      y: 1.3587356
+      y: 1.0087357
       z: 2.0200002
     radius: 1
   - center:
       x: -4.5
-      y: 1.3587356
+      y: 1.0087357
       z: 3.02
     radius: 1
   - center:
       x: -4.5
-      y: 1.4337735
+      y: 1.0837736
       z: 4.0199995
     radius: 1
   - center:
       x: -4.5
-      y: 3.5637448
+      y: 3.2137446
       z: 5.0199995
     radius: 1
   - center:
       x: -4.5
-      y: 1.7596452
+      y: 1.4096452
       z: 5.0199995
     radius: 1
   - center:
       x: -3.5
-      y: 3.5556283
+      y: 3.2056284
       z: -3.98
     radius: 1
   - center:
       x: -3.5
-      y: 1.7515289
+      y: 1.4015288
       z: -3.98
     radius: 1
   - center:
       x: -3.5
-      y: 1.1405749
+      y: 0.790575
       z: -2.98
     radius: 1
   - center:
       x: -3.5
-      y: 1.358736
+      y: 1.0087361
       z: -1.98
     radius: 1
   - center:
       x: -3.5
-      y: 1.3587356
+      y: 1.0087357
       z: -0.98
     radius: 1
   - center:
       x: -3.5
-      y: 1.3587356
+      y: 1.0087357
       z: 0.019999921
     radius: 1
   - center:
       x: -3.5
-      y: 1.3587356
+      y: 1.0087357
       z: 1.02
     radius: 1
   - center:
       x: -3.5
-      y: 1.3587356
+      y: 1.0087357
       z: 2.0200002
     radius: 1
   - center:
       x: -3.5
-      y: 1.3587346
+      y: 1.0087347
       z: 3.02
     radius: 1
   - center:
       x: -3.5
-      y: 1.1405749
+      y: 0.790575
       z: 4.0199995
     radius: 1
   - center:
       x: -3.5
-      y: 3.5637448
+      y: 3.2137446
       z: 5.0199995
     radius: 1
   - center:
       x: -3.5
-      y: 1.7596452
+      y: 1.4096452
       z: 5.0199995
     radius: 1
   - center:
       x: -2.5000002
-      y: 3.5556283
+      y: 3.2056284
       z: -3.98
     radius: 1
   - center:
       x: -2.5000002
-      y: 1.7515289
+      y: 1.4015288
       z: -3.98
     radius: 1
   - center:
       x: -2.5000002
-      y: 1.1405754
+      y: 0.7905755
       z: -2.98
     radius: 1
   - center:
       x: -2.5000002
-      y: 1.1405749
+      y: 0.790575
       z: -1.98
     radius: 1
   - center:
       x: -2.5000002
-      y: 1.1405749
+      y: 0.790575
       z: -0.98
     radius: 1
   - center:
       x: -2.5000002
-      y: 1.1405749
+      y: 0.790575
       z: 0.019999921
     radius: 1
   - center:
       x: -2.5000002
-      y: 1.1405754
+      y: 0.7905755
       z: 1.02
     radius: 1
   - center:
       x: -2.5000002
-      y: 1.1405749
+      y: 0.790575
       z: 2.0200002
     radius: 1
   - center:
       x: -2.5000002
-      y: 1.1405754
+      y: 0.7905755
       z: 3.02
     radius: 1
   - center:
       x: -2.5000002
-      y: 1.1405749
+      y: 0.790575
       z: 4.0199995
     radius: 1
   - center:
       x: -2.5000002
-      y: 3.5637448
+      y: 3.2137446
       z: 5.0199995
     radius: 1
   - center:
       x: -2.5000002
-      y: 1.7596452
+      y: 1.4096452
       z: 5.0199995
     radius: 1
   - center:
       x: -1.5000001
-      y: 3.555628
+      y: 3.205628
       z: -3.98
     radius: 1
   - center:
       x: -1.5000001
-      y: 1.7515287
+      y: 1.4015287
       z: -3.98
     radius: 1
   - center:
       x: -1.5000001
-      y: 1.1405759
+      y: 0.790576
       z: -2.98
     radius: 1
   - center:
       x: -1.5000001
-      y: 1.1405759
+      y: 0.790576
       z: -1.98
     radius: 1
   - center:
       x: -1.5000001
-      y: 1.1405749
+      y: 0.790575
       z: -0.98
     radius: 1
   - center:
       x: -1.5000001
-      y: 1.1405749
+      y: 0.790575
       z: 0.019999921
     radius: 1
   - center:
       x: -1.5000001
-      y: 1.1405754
+      y: 0.7905755
       z: 1.02
     radius: 1
   - center:
       x: -1.5000001
-      y: 1.1405749
+      y: 0.790575
       z: 2.0200002
     radius: 1
   - center:
       x: -1.5000001
-      y: 1.1405711
+      y: 0.7905712
       z: 3.02
     radius: 1
   - center:
       x: -1.5000001
-      y: 1.1405749
+      y: 0.790575
       z: 4.0199995
     radius: 1
   - center:
       x: -1.5000001
-      y: 3.5637448
+      y: 3.2137446
       z: 5.0199995
     radius: 1
   - center:
       x: -1.5000001
-      y: 1.7596455
+      y: 1.4096454
       z: 5.0199995
     radius: 1
   - center:
       x: -0.50000006
-      y: 3.555628
+      y: 3.205628
       z: -3.98
     radius: 1
   - center:
       x: -0.50000006
-      y: 1.7515287
+      y: 1.4015287
       z: -3.98
     radius: 1
   - center:
       x: -0.50000006
-      y: 1.1405759
+      y: 0.790576
       z: -2.98
     radius: 1
   - center:
       x: -0.50000006
-      y: 1.1405759
+      y: 0.790576
       z: -1.98
     radius: 1
   - center:
       x: -0.50000006
-      y: 1.1405759
+      y: 0.790576
       z: -0.98
     radius: 1
   - center:
       x: -0.50000006
-      y: 1.1405749
+      y: 0.790575
       z: 0.019999921
     radius: 1
   - center:
       x: -0.50000006
-      y: 1.1405754
+      y: 0.7905755
       z: 1.02
     radius: 1
   - center:
       x: -0.50000006
-      y: 1.1405749
+      y: 0.790575
       z: 2.0200002
     radius: 1
   - center:
       x: -0.50000006
-      y: 1.1405745
+      y: 0.79057455
       z: 3.02
     radius: 1
   - center:
       x: -0.50000006
-      y: 1.1405749
+      y: 0.790575
       z: 4.0199995
     radius: 1
   - center:
       x: -0.50000006
-      y: 3.5637448
+      y: 3.2137446
       z: 5.0199995
     radius: 1
   - center:
       x: -0.50000006
-      y: 1.7596455
+      y: 1.4096454
       z: 5.0199995
     radius: 1
   - center:
       x: 0.50000006
-      y: 3.555628
+      y: 3.205628
       z: -3.98
     radius: 1
   - center:
       x: 0.50000006
-      y: 1.7515287
+      y: 1.4015287
       z: -3.98
     radius: 1
   - center:
       x: 0.50000006
-      y: 1.1405759
+      y: 0.790576
       z: -2.98
     radius: 1
   - center:
       x: 0.50000006
-      y: 1.6444502
+      y: 1.2944503
       z: -1.98
     radius: 1
   - center:
       x: 0.50000006
-      y: 1.1405759
+      y: 0.790576
       z: -0.98
     radius: 1
   - center:
       x: 0.50000006
-      y: 1.8687723
+      y: 1.5187721
       z: 0.019999921
     radius: 1
   - center:
       x: 0.50000006
-      y: 1.1405754
+      y: 0.7905755
       z: 1.02
     radius: 1
   - center:
       x: 0.50000006
-      y: 1.8687956
+      y: 1.5187955
       z: 2.0200002
     radius: 1
   - center:
       x: 0.50000006
-      y: 1.6483724
+      y: 1.2983723
       z: 3.02
     radius: 1
   - center:
       x: 0.50000006
-      y: 1.1405745
+      y: 0.79057455
       z: 4.0199995
     radius: 1
   - center:
       x: 0.50000006
-      y: 3.5637448
+      y: 3.2137446
       z: 5.0199995
     radius: 1
   - center:
       x: 0.50000006
-      y: 1.7596455
+      y: 1.4096454
       z: 5.0199995
     radius: 1
   - center:
       x: 1.5000001
-      y: 3.5556283
+      y: 3.2056284
       z: -3.98
     radius: 1
   - center:
       x: 1.5000001
-      y: 1.7515287
+      y: 1.4015287
       z: -3.98
     radius: 1
   - center:
       x: 1.5000001
-      y: 1.4064355
+      y: 1.0564356
       z: -2.98
     radius: 1
   - center:
       x: 1.5000001
-      y: 1.6902668
+      y: 1.3402667
       z: -1.98
     radius: 1
   - center:
       x: 1.5000001
-      y: 1.6902666
+      y: 1.3402667
       z: -0.98
     radius: 1
   - center:
       x: 1.5000001
-      y: 1.6902666
+      y: 1.3402667
       z: 0.019999921
     radius: 1
   - center:
       x: 1.5000001
-      y: 1.6902666
+      y: 1.3402667
       z: 1.02
     radius: 1
   - center:
       x: 1.5000001
-      y: 1.6902661
+      y: 1.3402662
       z: 2.0200002
     radius: 1
   - center:
       x: 1.5000001
-      y: 1.6902659
+      y: 1.3402658
       z: 3.02
     radius: 1
   - center:
       x: 1.5000001
-      y: 1.4064345
+      y: 1.0564346
       z: 4.0199995
     radius: 1
   - center:
       x: 1.5000001
-      y: 3.5637448
+      y: 3.2137446
       z: 5.0199995
     radius: 1
   - center:
       x: 1.5000001
-      y: 1.7596453
+      y: 1.4096453
       z: 5.0199995
     radius: 1
   - center:
       x: 2.5000002
-      y: 3.5556283
+      y: 3.2056284
       z: -3.98
     radius: 1
   - center:
       x: 2.5000002
-      y: 1.7515287
+      y: 1.4015287
       z: -3.98
     radius: 1
   - center:
       x: 2.5000002
-      y: 1.6902673
+      y: 1.3402672
       z: -2.98
     radius: 1
   - center:
       x: 2.5000002
-      y: 1.6902668
+      y: 1.3402667
       z: -1.98
     radius: 1
   - center:
       x: 2.5000002
-      y: 2.3200357
+      y: 1.9700356
       z: -0.98
     radius: 1
   - center:
       x: 2.5000002
-      y: 2.267349
+      y: 1.9173489
       z: 0.019999921
     radius: 1
   - center:
       x: 2.5000002
-      y: 2.2664924
+      y: 1.9164925
       z: 1.02
     radius: 1
   - center:
       x: 2.5000002
-      y: 1.6902661
+      y: 1.3402662
       z: 2.0200002
     radius: 1
   - center:
       x: 2.5000002
-      y: 1.6902659
+      y: 1.3402658
       z: 3.02
     radius: 1
   - center:
       x: 2.5000002
-      y: 1.6902659
+      y: 1.3402658
       z: 4.0199995
     radius: 1
   - center:
       x: 2.5000002
-      y: 3.5637448
+      y: 3.2137446
       z: 5.0199995
     radius: 1
   - center:
       x: 2.5000002
-      y: 1.7596453
+      y: 1.4096453
       z: 5.0199995
     radius: 1
   - center:
       x: 3.4999998
-      y: 3.5556283
+      y: 3.2056284
       z: -3.98
     radius: 1
   - center:
       x: 3.4999998
-      y: 1.7515287
+      y: 1.4015287
       z: -3.98
     radius: 1
   - center:
       x: 3.4999998
-      y: 1.6902673
+      y: 1.3402672
       z: -2.98
     radius: 1
   - center:
       x: 3.4999998
-      y: 1.6902668
+      y: 1.3402667
       z: -1.98
     radius: 1
   - center:
       x: 3.4999998
-      y: 1.6902666
+      y: 1.3402667
       z: -0.98
     radius: 1
   - center:
       x: 3.4999998
-      y: 1.6902666
+      y: 1.3402667
       z: 0.019999921
     radius: 1
   - center:
       x: 3.4999998
-      y: 1.6902666
+      y: 1.3402667
       z: 1.02
     radius: 1
   - center:
       x: 3.4999998
-      y: 1.6902661
+      y: 1.3402662
       z: 2.0200002
     radius: 1
   - center:
       x: 3.4999998
-      y: 1.6902659
+      y: 1.3402658
       z: 3.02
     radius: 1
   - center:
       x: 3.4999998
-      y: 1.6902659
+      y: 1.3402658
       z: 4.0199995
     radius: 1
   - center:
       x: 3.4999998
-      y: 3.563745
+      y: 3.213745
       z: 5.0199995
     radius: 1
   - center:
       x: 3.4999998
-      y: 1.7596453
+      y: 1.4096453
       z: 5.0199995
     radius: 1
   - center:
       x: 4.499999
-      y: 3.5556283
+      y: 3.2056284
       z: -3.98
     radius: 1
   - center:
       x: 4.499999
-      y: 1.7515287
+      y: 1.4015287
       z: -3.98
     radius: 1
   - center:
       x: 4.499999
-      y: 1.6902673
+      y: 1.3402672
       z: -2.98
     radius: 1
   - center:
       x: 4.499999
-      y: 1.6902668
+      y: 1.3402667
       z: -1.98
     radius: 1
   - center:
       x: 4.499999
-      y: 1.6902666
+      y: 1.3402667
       z: -0.98
     radius: 1
   - center:
       x: 4.499999
-      y: 1.6902666
+      y: 1.3402667
       z: 0.019999921
     radius: 1
   - center:
       x: 4.499999
-      y: 1.6902666
+      y: 1.3402667
       z: 1.02
     radius: 1
   - center:
       x: 4.499999
-      y: 1.6902661
+      y: 1.3402662
       z: 2.0200002
     radius: 1
   - center:
       x: 4.499999
-      y: 1.6902661
+      y: 1.3402662
       z: 3.02
     radius: 1
   - center:
       x: 4.499999
-      y: 1.6902659
+      y: 1.3402658
       z: 4.0199995
     radius: 1
   - center:
       x: 4.499999
-      y: 3.5637448
+      y: 3.2137446
       z: 5.0199995
     radius: 1
   - center:
       x: 4.499999
-      y: 1.7596457
+      y: 1.4096457
       z: 5.0199995
     radius: 1
   mBakedDataLayerInfo:
@@ -3197,7 +3197,7 @@ MonoBehaviour:
   directivityValue: 1
   occlusion: 1
   occlusionInput: 0
-  occlusionType: 1
+  occlusionType: 0
   occlusionRadius: 0.68
   occlusionSamples: 16
   occlusionValue: 1
@@ -3220,7 +3220,7 @@ MonoBehaviour:
   hybridReverbEQHigh: 1
   hybridReverbDelay: 0
   applyHRTFToReflections: 0
-  reflectionsMixLevel: 0.5
+  reflectionsMixLevel: 0.2
   pathing: 1
   pathingProbeBatch: {fileID: 496218972}
   pathValidation: 1
@@ -3861,7 +3861,7 @@ MonoBehaviour:
   directivityValue: 1
   occlusion: 1
   occlusionInput: 0
-  occlusionType: 1
+  occlusionType: 0
   occlusionRadius: 0.68
   occlusionSamples: 16
   occlusionValue: 1
@@ -3884,7 +3884,7 @@ MonoBehaviour:
   hybridReverbEQHigh: 1
   hybridReverbDelay: 0
   applyHRTFToReflections: 0
-  reflectionsMixLevel: 0.5
+  reflectionsMixLevel: 0.2
   pathing: 1
   pathingProbeBatch: {fileID: 496218972}
   pathValidation: 1
